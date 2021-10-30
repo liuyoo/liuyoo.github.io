@@ -313,7 +313,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><ul>
+        <h2 id="【GitHub】"><a href="#【GitHub】" class="headerlink" title="【GitHub】"></a>【GitHub】</h2><h3 id="申请Github账号"><a href="#申请Github账号" class="headerlink" title="申请Github账号"></a>申请Github账号</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/join?source=header-home">Github注册页面</a></li>
+<li>输入<strong>用户名，Email，密码</strong>，注册账号。</li>
+</ul>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/downloads/">git下载地址</a></li>
+<li>下载git安装文件，双击执行安装。</li>
+</ul>
+<h3 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h3><ul>
+<li><p>打开git bash终端。</p>
+</li>
+<li><p>设置user.name和user.email。</p>
+<p>git config –global user.name “GitHub用户名”<br>git config –global user.email “GitHub注册邮箱”</p>
+</li>
+<li><p>生成ssh密匙</p>
+<p><code>ssh-keygen -t rsa -C &quot;github注册邮箱&quot;</code></p>
+<p>之后提示输入存储key的文件名、输入密码、确认密码，直接三个空格跳过。</p>
+</li>
+<li><p>此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。</p>
+</li>
+</ul>
+<h3 id="将公匙添加到github上"><a href="#将公匙添加到github上" class="headerlink" title="将公匙添加到github上"></a>将公匙添加到github上</h3><ul>
+<li><p>用户头像→Settings→SSH and GPG keys→New SSH key→将id_rsa.pub中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按钮。</p>
+</li>
+<li><p>打开git bash，输入ssh <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a>测试是否连接上github</p>
+</li>
+</ul>
+<h2 id="【配置环境】"><a href="#【配置环境】" class="headerlink" title="【配置环境】"></a>【配置环境】</h2><ul>
 <li><p>安装Nodejs</p>
 </li>
 <li><p>node -v    #查看node版本</p>
@@ -325,7 +352,7 @@
 <li><p>cnpm -v    #查看cnpm版本</p>
 </li>
 <li><p>cnpm install -g hexo-cli    #安装hexo框架</p>
-<p>（在公司电脑上安装的时候报错：Error: getaddrinfo EAI_AGAIN registry.npmmirror.com，使用npm install hexo-cli g命令安装成功）</p>
+<p>（之后再次在公司电脑上安装的时候报错：Error: getaddrinfo EAI_AGAIN registry.npmmirror.com，使用npm install hexo-cli g命令安装成功）</p>
 <p><img src="D:\CODE\blog\source_posts\error1.png" alt="报错信息"></p>
 </li>
 <li><p>hexo -v    #查看hexo版本</p>
@@ -335,7 +362,7 @@
 <li><p>cd blog     #进入blog目录  （之后的操作一直在blog目录中进行）</p>
 </li>
 </ul>
-<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><ul>
+<h2 id="【初始化博客】"><a href="#【初始化博客】" class="headerlink" title="【初始化博客】"></a>【初始化博客】</h2><ul>
 <li><p>sudo hexo init     #生成博客 初始化博客</p>
 </li>
 <li><p>hexo s    #启动本地博客服务<br>使用 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>    在浏览器中打开博客</p>
@@ -372,7 +399,7 @@
 <li>hexo d    #部署到Github仓库里</li>
 <li>使用<a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a>  地址可以查看博客</li>
 </ul>
-<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><ul>
+<h2 id="【修改主题】"><a href="#【修改主题】" class="headerlink" title="【修改主题】"></a>【修改主题】</h2><ul>
 <li><p>git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  #下载yilia主题到本地的themes/yilia文件夹中</p>
 </li>
 <li><p>修改hexo根目录下的 _config.yml 文件 ： </p>
