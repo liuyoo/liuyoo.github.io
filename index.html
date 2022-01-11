@@ -156,27 +156,46 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-虚拟化服务器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GitHub命令行的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/30/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%99%A8/">虚拟化服务器</a>
+      <a class="article-title" href="/2022/01/11/GitHub%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%BD%BF%E7%94%A8/">GitHub命令行的使用</a>
     </h1>
   
 
         
-        <a href="/2021/10/30/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="archive-article-date">
-  	<time datetime="2021-10-30T00:36:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-30</time>
+        <a href="/2022/01/11/GitHub%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2022-01-11T06:36:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p><strong>使用终端命令行将本地项目上传到Github并提交代码</strong> </p>
+<p>第一步： 在Github上创建自己的repository</p>
+<p>第二步：建立本地仓库cd到你的本地项目根目录下，执行git命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd 到你的项目目录下</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+<p>第三步：将本地项目工作区的所有文件添加到暂存区</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add </span><br></pre></td></tr></table></figure>
+
+<p>第三步：将暂存区的文件提交到本地仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;注释&quot;</span><br></pre></td></tr></table></figure>
+
+<p>第五步：将本地仓库关联到Github上</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/zhibinhsu/ShowAllLabel.git  用自己的url（创建的仓库的地址，赋值地址栏里面的地址即可）</span><br></pre></td></tr></table></figure>
+
+<p>这步骤如果提示错误：fatal: remote origin already exists. 解决办法如下：</p>
+<p>　　1、先删除远程 Git 仓库 $ git remote rm origin </p>
+<p>　　2、再重新添加远程 Git 仓库 $ git remote add origin <a target="_blank" rel="noopener" href="https://github.com/zhibinhsu/ShowAllLabel.git">https://github.com/zhibinhsu/ShowAllLabel.git</a> 用自己的url（创建的仓库的地址，赋值地址栏里面的地址即可）</p>
+<p>第六步：同步到服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -f origin master</span><br></pre></td></tr></table></figure>
+
+
       
 
       
@@ -188,7 +207,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/30/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%99%A8/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/01/11/GitHub%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%BD%BF%E7%94%A8/">展开全文 >></a>
         </p>
       
 
@@ -474,7 +493,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 liuyoo
+    		&copy; 2022 liuyoo
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
