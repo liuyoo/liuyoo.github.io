@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022 | Hexo</title>
+  <title>css | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+  <meta name="description" content="层叠样式表 (Cascading Style Sheets)常用的属性。 CSS的重点和难点在：元素的位置。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css">
+<meta property="og:url" content="http://example.com/2022/01/27/css/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="层叠样式表 (Cascading Style Sheets)常用的属性。 CSS的重点和难点在：元素的位置。">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="d:/CODE/blog/source_posts/pic/10.jpg">
+<meta property="og:image" content="d:/CODE/blog/source_posts/pic/11.gif">
+<meta property="og:image" content="d:/CODE/blog/source_posts/pic/12.jpg">
+<meta property="article:published_time" content="2022-01-27T02:22:09.000Z">
+<meta property="article:modified_time" content="2022-01-27T07:25:35.135Z">
 <meta property="article:author" content="liuyoo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:/CODE/blog/source_posts/pic/10.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -158,378 +166,302 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-css" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      css
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/27/css/" class="archive-article-date">
+
+        
+        <a href="/2022/01/27/css/" class="archive-article-date">
   	<time datetime="2022-01-27T02:22:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-27</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/27/css/">css</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>层叠样式表 (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets)常用的属性。</p>
+<p>CSS的重点和难点在：元素的位置。</p>
+<span id="more"></span>
 
-        <div class="article-info info-on-right">
-          
-          
+<p>语法：</p>
+<p>选择器，以及一条或多条声明。每条声明由一个属性和一个值组成。</p>
+<p><img src="D:\CODE\blog\source_posts\pic\10.jpg" alt="img"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">上、右、下、左</span><br><span class="line">上、左右、下</span><br><span class="line">上下、右左</span><br></pre></td></tr></table></figure>
 
+
+
+
+
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><ul>
+<li><p><strong>font-family</strong> 属性设置文本的字体系列。</p>
+</li>
+<li><p><strong>font-style</strong> 主要是用于指定斜体文字的字体样式属性。</p>
+</li>
+</ul>
+<p>正常 - 正常显示文本  font-style:normal</p>
+<p>斜体 - 以斜体字显示的文字 font-style:italic;</p>
+<p>倾斜的文字 - 文字向一边倾斜（和斜体非常类似，但不太支持） font-style:oblique;</p>
+<ul>
+<li><strong>font-size</strong> 属性设置文本的大小。默认大小和普通文本段落一样，是16像素（16px=1em）。</li>
+</ul>
+<p>像素</p>
+<p>em</p>
+<ul>
+<li><strong>font-weight</strong> 字体的粗细</li>
+</ul>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p><img src="D:\CODE\blog\source_posts\pic\11.gif" alt="CSS box-model"></p>
+<p>元素的总宽度：</p>
+<p>总元素的宽度=宽度(width)+左填充(Padding)+右填充+左边框(border)+右边框+左边距(margin)+右边距</p>
+<p>元素的总高度：</p>
+<p>总元素的高度=高度(height)+顶部填充+底部填充+上边框+下边框+上边距+下边距</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">    width: 300px;//内容占据的空间</span><br><span class="line">    border: 25px solid green;</span><br><span class="line">    padding: 25px;</span><br><span class="line">    margin: 25px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>   300px (宽)<br> + 50px (左 + 右填充)<br> + 50px (左 + 右边框)<br> + 50px (左 + 右边距)<br> = 450px</p>
+<ul>
+<li><p><strong>margin</strong></p>
+<p>可能的值：auto、length（使用像素，pt，em等） 、%</p>
+<p> Margin可以使用负值，重叠的内容。</p>
+</li>
+<li><p><strong>padding</strong></p>
+<p>可能的值：length（使用像素，pt，em等） 、%</p>
+</li>
+</ul>
+<h2 id="Display-amp-Visibility"><a href="#Display-amp-Visibility" class="headerlink" title="Display&amp;Visibility"></a>Display&amp;Visibility</h2><ul>
+<li><p><strong>块元素</strong>是一个元素，占用了全部宽度，在前后都是换行符。</p>
+<p>address , blockquote , center , dir , div , dl , fieldset , form , h1 ,  h2 , h3 , h4 , h5 , h6 , hr , isindex , menu , noframes , noscript , ol , p , pre , table , ul , li</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>内联元素</strong>只需要必要的宽度，不强制换行。</p>
+<p>a , abbr , acronym , b , bdo , big , br , cite , code , dfn , em , font , i , img , input , kbd , label , q , s , samp , select , small , span ,  strike , strong , sub , sup ,textarea , tt , u , var</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>可变元素</strong>(根据上下文关系确定该元素是块元素还是内联元素)：</p>
+<p>applet ,button ,del ,iframe , ins ,map ,object , script</p>
+</li>
+</ul>
+<ul>
+<li><p>利用CSS可以摆脱上面HTML标签归类的限制，自由地在不同标签/元素上应用需要的属性。</p>
+<p>主要用的CSS样式有以下三个：</p>
+<p>  display:block  – 显示为块级元素<br>  display:inline  – 显示为内联元素<br>  display:inline-block – 显示为内联块元素，表现为同行显示并可修改宽高内外边距等属性</p>
+</li>
+</ul>
+<p>​    我们常将所有 li 元素加上display:inline-block样式，原本垂直的列表就可以水平显示了。</p>
+<p>​    <code>span &#123;display:block;&#125;</code>  把span元素作为块元素</p>
+<p>隐藏元素 - display:none或visibility:hidden</p>
+<p>visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。</p>
+<h2 id="Position"><a href="#Position" class="headerlink" title="Position"></a>Position</h2><ul>
+<li><p><strong>static</strong> 默认值，即没有定位，遵循正常的文档流对象。静态定位的元素不会受到 top, bottom, left, right影响。</p>
+</li>
+<li><p><strong>relative</strong> 相对定位元素的定位是相对其正常位置。</p>
+<p>相对定位元素经常被用来作为绝对定位元素的容器块。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">h2.pos_left</span><br><span class="line">&#123;</span><br><span class="line">    position:relative;</span><br><span class="line">    left:-20px;//从元素的原始左侧位置减去 20 像素。</span><br><span class="line">&#125;</span><br><span class="line">h2.pos_right</span><br><span class="line">&#123;</span><br><span class="line">    position:relative;</span><br><span class="line">    left:20px;//向元素的原始左侧位置增加 20 像素。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>fixed</strong> 元素的位置相对于浏览器窗口是固定位置。即使窗口是滚动的它也不会移动。</p>
+<p>Fixed定位使元素的位置与文档流无关，因此不占据空间。</p>
+<p>Fixed定位的元素和其他元素重叠。</p>
+</li>
+<li><p><strong>absolute</strong> </p>
+<p>绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于<html></p>
+<p>absolute 定位使元素的位置与文档流无关，因此不占据空间。</p>
+<p>absolute 定位的元素和其他元素重叠。</p>
+</li>
+<li><p><strong>sticky</strong> 基于用户的滚动位置来定位。</p>
+<p>粘性定位的元素是依赖于用户的滚动，在 <strong>position:relative</strong> 与 <strong>position:fixed</strong> 定位之间切换。</p>
+<p>它的行为就像 <strong>position:relative;</strong> 而当页面滚动超出目标区域时，它的表现就像 **position:fixed;**，它会固定在目标位置。</p>
+<p>元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。</p>
+</li>
+</ul>
+<h2 id="Overflow"><a href="#Overflow" class="headerlink" title="Overflow"></a>Overflow</h2><p>overflow  属性可以控制内容溢出元素框时在对应的元素区间内添加滚动条。</p>
+<table>
+<thead>
+<tr>
+<th>visible</th>
+<th>默认值。内容不会被修剪，会呈现在元素框之外。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>hidden</td>
+<td>内容会被修剪，并且其余内容是不可见的。</td>
+</tr>
+<tr>
+<td>scroll</td>
+<td>内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。</td>
+</tr>
+<tr>
+<td>auto</td>
+<td>如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>规定应该从父元素继承 overflow 属性的值。</td>
+</tr>
+</tbody></table>
+<h2 id="Float"><a href="#Float" class="headerlink" title="Float"></a>Float</h2><p>Float（浮动），会使元素向左或向右移动，其周围的元素也会重新排列。</p>
+<p>一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。</p>
+<p><img src="D:\CODE\blog\source_posts\pic\12.jpg" alt="image-20220127145907966"></p>
+<p>如果你把几个浮动的元素放到一起，如果有空间的话，它们将彼此相邻。</p>
+<p><strong>清除浮动</strong></p>
+<p>元素浮动之后，周围的元素会重新排列，为了避免这种情况，使用 clear 属性。</p>
+<p>clear 属性指定元素两侧不能出现浮动元素。</p>
+<p>CSS中所有的浮动属性：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>值</th>
+<th>CSS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://www.runoob.com/cssref/pr-class-clear.html">clear</a></td>
+<td>指定不允许元素周围有浮动元素。</td>
+<td>left  right  both  none  inherit</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.runoob.com/cssref/pr-class-float.html">float</a></td>
+<td>指定一个盒子（元素）是否可以浮动。</td>
+<td>left  right  none  inherit</td>
+<td>1</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/27/css/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/24/Hibernate/" class="archive-article-date">
-  	<time datetime="2022-01-24T04:11:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-24</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/01/24/Hibernate/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hibernate</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/24/Hibernate/">Hibernate</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/24/JDBC/" class="archive-article-date">
-  	<time datetime="2022-01-24T02:58:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/24/JDBC/">JDBC</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/24/09-SpringData-JPA/" class="archive-article-date">
-  	<time datetime="2022-01-24T02:41:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/24/09-SpringData-JPA/">09-SpringData&amp;JPA</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/24/08-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9ASpring/" class="archive-article-date">
-  	<time datetime="2022-01-24T02:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/24/08-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9ASpring/">08-学习笔记：Spring</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Spring</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/21/07-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9AMyBatis-Plus/" class="archive-article-date">
-  	<time datetime="2022-01-21T09:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/21/07-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9AMyBatis-Plus/">07-学习笔记：MyBatis-Plus</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/21/06-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9AMyBatis-%E4%BA%8C/" class="archive-article-date">
-  	<time datetime="2022-01-21T09:27:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/21/06-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9AMyBatis-%E4%BA%8C/">06-学习笔记：MyBatis(二)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">MyBatis</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/19/05-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9AMyBatis/" class="archive-article-date">
-  	<time datetime="2022-01-19T02:13:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/19/05-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9AMyBatis/">05-学习笔记：MyBatis(一)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">MyBatis</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/17/04-idea%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="archive-article-date">
-  	<time datetime="2022-01-17T06:53:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/17/04-idea%E5%BF%AB%E6%8D%B7%E9%94%AE/">04-idea快捷键</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">开发工具</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/14/03-%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9ALayui-JavaScript/" class="archive-article-date">
-  	<time datetime="2022-01-14T06:59:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/14/03-%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9ALayui-JavaScript/">03-前端学习笔记：Layui+JavaScript</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Layui</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2022/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -553,8 +485,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
